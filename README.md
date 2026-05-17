@@ -1,5 +1,5 @@
 🚀 Revamped README (AI-Powered Content Automation Platform)
-# 🤖 AI-Powered Content Automation Platform
+# 🤖 ScribbleAI
 
 An end-to-end platform to generate, manage, and automate content using AI.  
 Designed with scalability, security, and real-world usage in mind.
