@@ -1,163 +1,167 @@
-🚀 Revamped README (AI-Powered Content Automation Platform)
-# 🤖 ScribbleAI
+<div align="center">
+  <h1>🎨 ScribbleAI - Creative Studio Platform</h1>
+  <p><strong>A Production-Grade Full-Stack AI Content Generation & Design Studio</strong></p>
 
-An end-to-end platform to generate, manage, and automate content using AI.  
-Designed with scalability, security, and real-world usage in mind.
-
----
-
-## 🎥 Demo
-
-🔗 [Watch Demo Video](https://1drv.ms/v/c/88248de4da4c08c3/EWnWBVqMz-1BokkfTdi0_ZABCCddJ7nlv4dpKn5I_1cdfQ?e=phmAhf)
-
----
-
-## 🧠 Overview
-
-This platform enables users to generate AI-powered content and images, manage usage through a credit-based system, and seamlessly upgrade plans.  
-It follows a **full-stack architecture** with secure authentication, modular backend design, and responsive frontend experience.
+  [![React](https://img.shields.io/badge/React-19.0-blue?style=flat-square&logo=react)](https://react.dev/)
+  [![Node.js](https://img.shields.io/badge/Node.js-Backend-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-Database-success?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+  [![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](#)
+</div>
 
 ---
 
-## ⚡ Tech Stack
+## 🌟 Overview
 
-### Frontend
-- React (with React Router)
-- Tailwind CSS
-- Axios
-- Framer Motion
+**ScribbleAI** has evolved from a simple text-to-image generator into a comprehensive, professional **AI Creative Studio**. It empowers creators, marketers, and developers to generate, edit, and manage high-quality AI assets through a unified, centralized dashboard. 
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT Authentication
-- bcrypt (Password Hashing)
-
-### Tools & Utilities
-- dotenv (Environment management)
-- REST APIs
-- Toast Notifications
+Built with scalability in mind, the platform features a multi-layered backend architecture, secure token-based authentication, a credit-billing system, and a pixel-perfect, responsive React frontend.
 
 ---
 
-## 🔥 Core Features
+## 🚀 Key Features
 
-- 🔐 Secure authentication using JWT  
-- 🛡 Password encryption with bcrypt  
-- 💳 Credit-based usage system for AI generation  
-- 🛍 Plan upgrade system for purchasing credits  
-- 🖼 AI-powered image and content generation  
-- 📱 Fully responsive UI  
-- 🔒 Protected routes and session handling  
-- ⚡ Smooth user experience with real-time feedback  
+### 🎨 1. AI Creative Tools Hub
+A centralized suite of 14 powerful AI tools, categorized for a seamless workflow:
+- **Image Creation**: Advanced Text-to-Image Generation, Image Variations, and Professional Avatar Studio.
+- **Design Tools**: Automated Logo Generation, YouTube Thumbnail Maker, and Poster Design.
+- **Content Tools**: AI Chat Assistant for prompt brainstorming, Brand Kit Generator, and a Prompt Library.
+- **Image Editor**: In-browser tools for background removal, upscaling, and outpainting.
 
----
+### 💼 2. Command Center Dashboard
+- **Real-Time Analytics**: Track total generations, downloads, favorite tools, and credit usage.
+- **Recent Activity**: Quickly resume work on your latest creations.
+- **Project Workspace**: Organize generated assets into custom folders and manage campaigns effectively.
 
-## 🏗 Architecture
-
-- **Frontend (React)** → UI, user interaction  
-- **Backend (Express)** → API layer, authentication, business logic  
-- **Database (MongoDB)** → user data, credits, transactions  
-
-Follows a **modular MVC pattern** for scalability and maintainability.
+### 🔐 3. Enterprise-Grade Backend
+- **Multi-Provider AI Abstraction**: Standardized service layer supporting OpenAI, Gemini, and Grok.
+- **Layered Architecture**: Clean separation of concerns using MVC (Routes → Controllers → Services → Models).
+- **Security**: Robust JWT authentication, bcrypt password hashing, and Zod input validation.
 
 ---
 
-## 📦 Getting Started
+## 🛠️ Technology Stack
+
+### **Frontend**
+- **Framework**: React 19 (Vite)
+- **Routing**: React Router v7
+- **Styling**: Tailwind CSS v4 & Lucide React Icons
+- **Animations**: Framer Motion
+- **State/Requests**: Axios & Context API
+- **Notifications**: React Toastify
+
+### **Backend**
+- **Runtime**: Node.js & Express.js v4.22
+- **Database**: MongoDB (Mongoose ODMs)
+- **Authentication**: JSON Web Tokens (JWT) & bcrypt
+- **DevOps**: Docker & Docker Compose (with automated Healthchecks)
+
+---
+
+## 🏗️ Architecture Design
+
+ScribbleAI follows a scalable, Service-Oriented Architecture (SOA):
+
+```text
+Client (React 19)  ──(REST APIs)──>  API Gateway (Express.js)
+                                          │
+                                          ├──> Controllers (Business Logic)
+                                          │       └──> Services (External APIs)
+                                          │               ├──> AI Provider (Gemini/OpenAI)
+                                          │               └──> Payment Gateway
+                                          │
+                                          └──> Models (Mongoose)
+                                                  └──> MongoDB Cluster
+```
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js (v16+)
-- npm or yarn
-- MongoDB (Atlas or local)
-
----
+- [Node.js](https://nodejs.org/) (v18+)
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas cluster)
+- Package Manager: `npm` or `yarn`
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/ai-content-automation-platform.git
-cd ai-content-automation-platform
-2. Setup Backend
-cd Server
+git clone https://github.com/your-username/scribble-ai.git
+cd scribble-ai
+```
+
+### 2. Backend Setup
+```bash
+cd server
 npm install
+```
 
-Create .env file:
-
+Create a `.env` file in the `server` directory:
+```env
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/scribbleai
+JWT_SECRET=your_super_secret_jwt_key
+AI_PROVIDER=gemini # Choose from: gemini, openai, grok
+GEMINI_API_KEY=your_gemini_key
+```
 
-Run backend:
+Start the backend server:
+```bash
+npm run dev
+```
 
-npm start
-3. Setup Frontend
-cd ../Client/scribble-ai
+### 3. Frontend Setup
+```bash
+cd client
 npm install
-npm start
+```
 
-Open 👉 http://localhost:3000
-
-📁 Project Structure
-.
-├── Client/                 # React frontend
-│   └── scribble-ai/
-├── Server/
-│   ├── controllers/       # Business logic
-│   ├── models/            # Database schemas
-│   ├── routes/            # API routes
-│   ├── middleware/        # Auth & validation
-│   └── config/            # DB & environment setup
-🔐 Environment Variables
-Variable	Description
-MONGODB_URI	MongoDB connection string
-JWT_SECRET	Secret key for authentication
-PORT	Server port
-🎯 Key Highlights
-Scalable credit-based system design
-Secure authentication and data handling
-Clean separation of frontend and backend
-Real-world SaaS-like architecture
-🚧 Future Improvements
-Payment gateway integration (Stripe/Razorpay)
-Role-based access control
-AI prompt customization dashboard
-Usage analytics and admin panel
-⚠️ Disclaimer
-
-This project is built for educational and demonstration purposes.
-AI integrations are simplified and may use third-party APIs.
-
-🤝 Contribution
-
-Contributions, issues, and feature requests are welcome.
-
-⭐ If you found this project useful, consider giving it a star!
-
+Start the Vite development server:
+```bash
+npm run dev
+```
+Navigate to `http://localhost:5173` in your browser.
 
 ---
 
-## 🔥 What changed (important)
-- Renamed to **product-level title**
-- Removed clutter emojis → more **professional tone**
-- Added **architecture + highlights (very important for interviews)**
-- Structured like a **real SaaS project**
-- Cleaner sections → easier to read
+## 🐳 Docker Deployment
+
+The platform is fully containerized for production deployment.
+
+```bash
+# Build and start all services (Frontend, Backend, Database)
+docker-compose up --build -d
+
+# Check service health
+docker ps
+```
+*Note: The `docker-compose.yml` includes native healthchecks to ensure the Node backend and MongoDB instances are fully ready before accepting traffic.*
 
 ---
 
-## 💡 Honest feedback
-Your original version:
-- Too many emojis  
-- Too “feature listing” heavy  
-- Not enough **engineering thinking**
+## 📚 API Endpoints Reference
 
-This version:
-- Shows **system design + scalability mindset**
-- Much better for **SDE shortlisting**
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/auth/register` | Register a new user account | ❌ |
+| `POST` | `/api/auth/login` | Authenticate and retrieve JWT | ❌ |
+| `GET` | `/api/user/profile` | Get current user details & credits | ✅ |
+| `POST` | `/api/ai/generate` | Generate a standard AI image | ✅ |
+| `POST` | `/api/studio/avatar` | Generate a professional avatar | ✅ |
+| `POST` | `/api/studio/logo` | Generate a brand logo | ✅ |
 
 ---
 
-If you want next upgrade, I can:
-- Add **system design diagram (AWS architecture)**
-- Add **API documentation section**
-- Add **deployment guide (EC2 + Nginx + domain)** 🚀
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+---
+
+<div align="center">
+  <p>Built with ❤️ by the ScribbleAI Team.</p>
+</div>
