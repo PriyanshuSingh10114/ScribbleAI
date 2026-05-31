@@ -1,11 +1,37 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    creditBalance: { type: Number, default: 10 },
-});
+const userSchema = new mongoose.Schema(
+    {
+        name: { 
+            type: String, 
+            required: [true, 'Name is required'],
+            trim: true,
+            minlength: [2, 'Name must be at least 2 characters long'],
+            maxlength: [50, 'Name cannot exceed 50 characters']
+        },
+        email: { 
+            type: String, 
+            required: [true, 'Email is required'], 
+            unique: true,
+            lowercase: true,
+            trim: true
+        },
+        password: { 
+            type: String, 
+            required: [true, 'Password is required'],
+            minlength: [8, 'Password must be at least 8 characters long']
+        },
+        creditBalance: { 
+            type: Number, 
+            default: 10,
+            min: [0, 'Credit balance cannot be negative'] 
+        },
+    },
+    { timestamps: true }
+);
+
+// Indexes handled by unique: true
+// userSchema.index({ email: 1 });
 
 const userModel = mongoose.models.User || mongoose.model('user', userSchema);
 
