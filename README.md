@@ -42,19 +42,12 @@ A centralized suite of 14 powerful AI tools, categorized for a seamless workflow
 
 ## 🛠️ Technology Stack
 
-### **Frontend**
-- **Framework**: React 19 (Vite)
-- **Routing**: React Router v7
-- **Styling**: Tailwind CSS v4 & Lucide React Icons
-- **Animations**: Framer Motion
-- **State/Requests**: Axios & Context API
-- **Notifications**: React Toastify
-
-### **Backend**
-- **Runtime**: Node.js & Express.js v4.22
-- **Database**: MongoDB (Mongoose ODMs)
-- **Authentication**: JSON Web Tokens (JWT) & bcrypt
-- **DevOps**: Docker & Docker Compose (with automated Healthchecks)
+| Architecture Layer | Core Technologies |
+| :--- | :--- |
+| **🎨 Client / Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Framer](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) |
+| **⚙️ API / Backend** | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) |
+| **🗄️ Database Layer** | ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white) |
+| **☁️ Infrastructure** | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) |
 
 ---
 
@@ -162,6 +155,11 @@ We welcome contributions! Please follow these steps:
 
 ---
 
+## 👨‍💻 Author
+
+**Priyanshu Singh**  
+- **GitHub**: [@PriyanshuSingh10114](https://github.com/PriyanshuSingh10114)
+
 <div align="center">
-  <p>Built with ❤️ by the ScribbleAI Team.</p>
+  <p>Built with ❤️ by Priyanshu Singh.</p>
 </div>
