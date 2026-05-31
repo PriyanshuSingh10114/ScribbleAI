@@ -26,6 +26,18 @@ const userSchema = new mongoose.Schema(
             default: 10,
             min: [0, 'Credit balance cannot be negative'] 
         },
+        avatarUrl: {
+            type: String,
+            default: ''
+        },
+        totalGenerations: {
+            type: Number,
+            default: 0
+        },
+        settings: {
+            theme: { type: String, default: 'light' },
+            notificationsEnabled: { type: Boolean, default: true }
+        }
     },
     { timestamps: true }
 );

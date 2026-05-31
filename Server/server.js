@@ -13,6 +13,7 @@ import logger from './logs/winston.js';
 
 import userRouter from './routes/userRoutes.js';
 import aiRouter from './routes/aiRoutes.js';
+import studioRouter from './routes/studioRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,6 +36,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // Routes
 app.use('/api/user', userRouter);
 app.use('/api/ai', aiRouter);
+app.use('/api/studio', studioRouter);
 
 // Health check endpoints
 app.get('/health', (req, res) => {

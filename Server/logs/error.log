@@ -22,3 +22,15 @@
     at next (E:\React Projects\ScribbleAI\server\node_modules\router\index.js:291:5)
     at internalNext (file:///E:/React%20Projects/ScribbleAI/server/node_modules/helmet/index.mjs:527:6)
     at xXssProtectionMiddleware (file:///E:/React%20Projects/ScribbleAI/server/node_modules/helmet/index.mjs:307:3)
+2026-05-31 20:07:37 error: 500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/user/credits - OPTIONS - ::1
+2026-05-31 20:07:37 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at E:\React Projects\ScribbleAI\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at E:\React Projects\ScribbleAI\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (E:\React Projects\ScribbleAI\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (E:\React Projects\ScribbleAI\server\node_modules\router\index.js:342:13)
+    at E:\React Projects\ScribbleAI\server\node_modules\router\index.js:297:9
+    at processParams (E:\React Projects\ScribbleAI\server\node_modules\router\index.js:582:12)
+    at next (E:\React Projects\ScribbleAI\server\node_modules\router\index.js:291:5)
+    at internalNext (file:///E:/React%20Projects/ScribbleAI/server/node_modules/helmet/index.mjs:527:6)
+    at xXssProtectionMiddleware (file:///E:/React%20Projects/ScribbleAI/server/node_modules/helmet/index.mjs:307:3)
